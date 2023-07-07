@@ -1,6 +1,6 @@
 import { SimpleGrid } from "@chakra-ui/react";
 import React, { useState } from "react";
-import ProjectCard from "./projectcard";
+import ProjectCard from "./ProjectCard";
 
 const ProjectGrid = () => {
   const [project, setProject] = useState([]);

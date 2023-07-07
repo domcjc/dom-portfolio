@@ -1,13 +1,6 @@
-import { Grid, GridItem, Show } from "@chakra-ui/react";
-import {
-  ChakraProvider,
-  Container,
-  Stack,
-  Heading,
-  Text,
-} from "@chakra-ui/react";
+import { Grid, GridItem, Show, Text, Heading, HStack } from "@chakra-ui/react";
+import ColorModeSwitch from "./components/ColorModeSwitch";
 import NavBar from "./components/NavBar";
-import theme from "./theme";
 import "./index.css";
 import ProjectGrid from "./components/ProjectGrid";
 
@@ -27,11 +20,26 @@ function App() {
         paddingTop="110px"
         paddingBottom="100px"
       >
-        <Heading color={"#31d49d"} paddingLeft="60px" fontSize="10vw">
+        <Heading paddingLeft="60px" fontSize="10vw">
           Dom Coleman.
         </Heading>
+        <br></br>
+        <Text fontFamily="JetBrains Mono" paddingLeft="70px">
+          {" "}
+          Hi, I'm Dom.
+        </Text>
+        <br></br>
+        <Text
+          fontFamily="JetBrains Mono"
+          paddingLeft="70px"
+          paddingRight="50px"
+        >
+          {" "}
+          I am a aspiring web developer with a keen interest in frontend and
+          UI/UX.
+        </Text>
       </GridItem>
-      <GridItem area="content">
+      <GridItem area="content" height="100%">
         <ProjectGrid />
       </GridItem>
     </Grid>
