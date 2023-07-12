@@ -10,45 +10,46 @@ import { useColorMode } from "@chakra-ui/react";
 const home = () => {
   const { toggleColorMode, colorMode } = useColorMode();
   return (
-    <Container maxWidth="1200px" minWidth="350px">
+    <Container maxWidth="1200px" minWidth="590px" overflow="hidden">
       <Grid
         templateAreas={{
-          base: `"nav" "main" "content"`,
+          base: ` "main" "content" "footer"`,
         }}
       >
-        <GridItem
-          area="main"
-          height="20%"
-          paddingTop="110px"
-          paddingBottom="100px"
-          minWidth="350px"
-        >
+        <GridItem area="main" height="20%">
           <Heading
             fontSize="7xl"
-            minWidth="350px"
+            paddingTop="120px"
             textShadow={
-              colorMode === "dark" ? "0 0 5px white" : "0 0 5px #4d0012"
+              colorMode === "dark" ? "0 0 4px white" : "0 0 4px #4d0012"
             }
           >
             Dom Coleman.
           </Heading>
           <br></br>
-          <Text fontFamily="JetBrains Mono" marginRight="10px">
-            {" "}
+          <Text
+            fontFamily="JetBrains Mono"
+            paddingLeft="5px"
+            paddingRight="20px"
+          >
             Hi, I'm Dom.
           </Text>
           <br></br>
-          <Text fontFamily="JetBrains Mono" marginRight="10px">
-            {" "}
+          <Text
+            fontFamily="JetBrains Mono"
+            paddingLeft="5px"
+            paddingRight="20px"
+          >
             I am a web developer with a keen interest in frontend and UI/UX. I
             Graduated from the University of Auckland with a BSc in Computer
             Science and am an avid enthusiast in all pertaining to
             web-development.
           </Text>
         </GridItem>
-        <GridItem area="content" height="100%" minWidth="350px">
+        <GridItem area="content" marginTop="80px">
           <ProjectGrid />
         </GridItem>
+        <GridItem area="footer" height="40px"></GridItem>
       </Grid>
     </Container>
   );
