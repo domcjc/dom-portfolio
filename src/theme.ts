@@ -11,7 +11,7 @@ const config: ThemeConfig= {
 const styles = {
     global: (values: Record<string, any> | StyleFunctionProps) => ({
       body: {
-        bgGradient: mode("linear(to-r, #FFFFFF, #ffe0e8, #FFFFFF)","linear(to-l, #151533, #2E27B2, #1a202c)")(values),
+        bgGradient: mode("linear(to-r, #FFFFFF, #ffe0e8, #FFFFFF)","linear(to-r, #151533, #2E27B2, #1a202c)")(values),
         
 
       },

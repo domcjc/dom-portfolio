@@ -11,11 +11,7 @@ const ProjectGrid = () => {
   const [error, setError] = useState("");
 
   return (
-    <SimpleGrid
-      columns={{ sm: 1, md: 1, lg: 2, xl: 3 }}
-      padding="60px"
-      spacing={14}
-    >
+    <SimpleGrid columns={{ sm: 1, md: 2, lg: 2, xl: 3 }} spacing="65px">
       <ProjectCard imagename={rubrixpage} project={"Rubrix"}></ProjectCard>
       <ProjectCard
         imagename={bookpage}

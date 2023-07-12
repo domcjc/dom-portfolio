@@ -7,12 +7,10 @@ import NavButton from "./NavButton";
 const NavBar = () => {
   return (
     <Flex justifyContent="space-between">
-      <HStack
-        justifyContent="left"
-        paddingLeft="39px"
-        paddingRight="40px"
-        paddingTop="40px"
-      >
+      <HStack justifyContent="left" paddingTop="40px" paddingRight="20px">
+        <Link to="/home">
+          <NavButton navitem="Home"></NavButton>
+        </Link>
         <Link to="/projects">
           <NavButton navitem="Projects"></NavButton>
         </Link>
