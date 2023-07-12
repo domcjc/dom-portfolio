@@ -20,6 +20,7 @@ const home = () => {
           <Heading
             fontSize="7xl"
             paddingTop="120px"
+            fontFamily="JetBrains Mono"
             textShadow={
               colorMode === "dark" ? "0 0 4px white" : "0 0 4px #4d0012"
             }
