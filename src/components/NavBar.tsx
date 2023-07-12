@@ -1,25 +1,27 @@
-import { HStack, Image, Text, Flex } from "@chakra-ui/react";
+import { HStack, Image, Text, Flex, Button } from "@chakra-ui/react";
 import logo from "../assets/logo.png";
 import ColorModeSwitch from "./ColorModeSwitch";
+import { Link } from "react-router-dom";
+import NavButton from "./NavButton";
 
 const NavBar = () => {
   return (
     <Flex justifyContent="space-between">
       <HStack
         justifyContent="left"
-        paddingLeft="65px"
+        paddingLeft="39px"
         paddingRight="40px"
-        paddingTop="20px"
+        paddingTop="40px"
       >
-        <Text fontFamily="JetBrains Mono" paddingRight="40px">
-          Projects
-        </Text>
-        <Text fontFamily="JetBrains Mono" paddingRight="40px">
-          About
-        </Text>
-        <Text fontFamily="JetBrains Mono" paddingRight="40px">
-          Contact
-        </Text>
+        <Link to="/projects">
+          <NavButton navitem="Projects"></NavButton>
+        </Link>
+        <Link to="/about">
+          <NavButton navitem="About"></NavButton>
+        </Link>
+        <Link to="/contact">
+          <NavButton navitem="Contact"></NavButton>
+        </Link>
       </HStack>
       <ColorModeSwitch />
     </Flex>

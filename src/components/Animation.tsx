@@ -21,9 +21,7 @@ const Animation = () => {
           duration: 2,
           ease: "easeInOut",
         }}
-      >
-        Dom Coleman.
-      </ChakraBox>
+      ></ChakraBox>
     </Container>
   );
 };

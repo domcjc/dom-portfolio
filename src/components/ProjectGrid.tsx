@@ -1,6 +1,10 @@
 import { SimpleGrid } from "@chakra-ui/react";
 import React, { useState } from "react";
 import ProjectCard from "./ProjectCard";
+import rubrixpage from "../assets/rubrixpage.png";
+import bookpage from "../assets/bookpage.png";
+import chessacademy from "../assets/chessacademy.png";
+import otherproject from "../assets/otherproject.png";
 
 const ProjectGrid = () => {
   const [project, setProject] = useState([]);
@@ -8,14 +12,23 @@ const ProjectGrid = () => {
 
   return (
     <SimpleGrid
-      columns={{ sm: 1, md: 2, lg: 3, xl: 4 }}
+      columns={{ sm: 1, md: 1, lg: 2, xl: 3 }}
       padding="60px"
-      spacing={10}
+      spacing={14}
     >
-      <ProjectCard project={"Rubrix"}></ProjectCard>
-      <ProjectCard project={"Chess Academy"}></ProjectCard>
-      <ProjectCard project={"Book Discussion Program"}></ProjectCard>
-      <ProjectCard project={"Barcode Scanner"}></ProjectCard>
+      <ProjectCard imagename={rubrixpage} project={"Rubrix"}></ProjectCard>
+      <ProjectCard
+        imagename={bookpage}
+        project={"Book Discussion Program"}
+      ></ProjectCard>
+      <ProjectCard
+        imagename={chessacademy}
+        project={"Chess Academy"}
+      ></ProjectCard>
+      <ProjectCard
+        imagename={otherproject}
+        project={"Barcode Scanner"}
+      ></ProjectCard>
     </SimpleGrid>
   );
 };
