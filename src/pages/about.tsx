@@ -47,8 +47,18 @@ const about = () => {
           <br />
           <br />I am both keen on both front and back end, alongside
           implementating UI/UX that proves relevant to the context and setting
-          of a specfic application.
+          of a specfic application. I also have a keen interest in intergrating
+          cloud services, particularly AWS.
+          <br />
+          <br />
+          <br />
+          <br />
+          Qualifications:
         </Text>
+        <ul>
+          <li>BSc in Computer Science - Univeristy of Auckland</li>
+          <li>AWS Cloud Practitioners License</li>
+        </ul>
       </Container>
     </motion.div>
   );

@@ -2,3 +2,10 @@ html{
     min-width: fit-content;
     scroll-behavior: smooth;
 }
+
+li{
+    font-family: 'JetBrains Mono';
+    margin-top: 10px;
+    margin-left: 30px;
+    padding-left: 10px;
+}

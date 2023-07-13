@@ -32,12 +32,7 @@ const DisplayCard = ({ project, imagename, linkid }: Props) => {
       </Heading>
       <Card
         borderRadius={12}
-        bgGradient={
-          colorMode === "dark"
-            ? "linear(to-l, #203A43, #203A43, #203A43)"
-            : "linear(to-l, #C4E0E5, #C4E0E5)"
-        }
-        boxShadow={colorMode === "dark" ? "dark-lg" : "dark-lg"}
+        bg={colorMode === "dark" ? "#203A43" : "#C4E0E5"}
         height="700px"
         id={linkid}
         marginBottom="200px"

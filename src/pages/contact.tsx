@@ -28,9 +28,27 @@ const contact = () => {
           }
           paddingTop="100px"
           fontFamily="JetBrains Mono"
+          paddingBottom="20px"
         >
           contact.
         </Heading>
+        <Text
+          fontFamily="JetBrains Mono"
+          paddingLeft="5px"
+          paddingRight="20px"
+          paddingBottom="10px"
+        >
+          Feel free to say hi via
+        </Text>
+        <Text
+          fontFamily="JetBrains Mono"
+          fontSize="10pt"
+          paddingLeft="15px"
+          paddingRight="20px"
+          paddingBottom="20px"
+        >
+          domcjcoleman@gmail.com
+        </Text>
       </Container>
     </motion.div>
   );
