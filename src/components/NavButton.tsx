@@ -19,6 +19,7 @@ const NavButton = ({ navitem }: Props) => {
       _focus={{
         color: colorMode === "dark" ? "#9ae6b4" : "#f95278",
       }}
+      _active={{ bg: "none" }}
     >
       {navitem}
     </Button>

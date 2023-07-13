@@ -1,6 +1,6 @@
-import { SimpleGrid } from "@chakra-ui/react";
+import { SimpleGrid, Heading } from "@chakra-ui/react";
 import React, { useState } from "react";
-import ProjectCard from "./ProjectCard";
+import DisplayCard from "./DisplayCard";
 import rubrixpage from "../assets/rubrixpage.png";
 import bookpage from "../assets/bookpage.png";
 import chessacademy from "../assets/chessacademy.png";
@@ -8,42 +8,37 @@ import otherproject from "../assets/otherproject.png";
 import Scroll from "react-scroll";
 const ScrollLink = Scroll.ScrollLink;
 
-const ProjectGrid = () => {
+const DisplayGrid = () => {
   const [project, setProject] = useState([]);
   const [error, setError] = useState("");
 
   return (
-    <SimpleGrid
-      columns={{ sm: 1, md: 2, lg: 2, xl: 3 }}
-      spacing="65px"
-      paddingTop="100px"
-      marginBottom="200px"
-    >
-      <ProjectCard
+    <SimpleGrid columns={{ sm: 1, md: 1, lg: 1, xl: 1 }} spacing="200px">
+      <DisplayCard
         imagename={rubrixpage}
         project={"Rubrix"}
-        linkid={"/projects#project1"}
-      ></ProjectCard>
+        linkid={"project1"}
+      ></DisplayCard>
 
-      <ProjectCard
+      <DisplayCard
         imagename={bookpage}
         project={"Book Discussion Program"}
-        linkid={"/projects#project2"}
-      ></ProjectCard>
+        linkid={"project2"}
+      ></DisplayCard>
 
-      <ProjectCard
+      <DisplayCard
         imagename={chessacademy}
         project={"Chess Academy"}
-        linkid={"/projects#project3"}
-      ></ProjectCard>
+        linkid={"project3"}
+      ></DisplayCard>
 
-      <ProjectCard
+      <DisplayCard
         imagename={otherproject}
         project={"Barcode Scanner"}
-        linkid={"/projects#project4"}
-      ></ProjectCard>
+        linkid={"project4"}
+      ></DisplayCard>
     </SimpleGrid>
   );
 };
 
-export default ProjectGrid;
+export default DisplayGrid;
