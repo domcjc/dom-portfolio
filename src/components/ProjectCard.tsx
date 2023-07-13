@@ -15,7 +15,6 @@ import { IoLogoJavascript } from "react-icons/io";
 import { DiCss3 } from "react-icons/di";
 import { Link } from "react-router-dom";
 import NavButton from "./NavButton";
-import ScrollToHashElement from "../components/ScrollToElementHash";
 interface Props {
   project: string;
   imagename: string;
