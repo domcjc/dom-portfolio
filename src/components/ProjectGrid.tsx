@@ -15,9 +15,11 @@ const ProjectGrid = () => {
   return (
     <SimpleGrid
       columns={{ sm: 1, md: 2, lg: 2, xl: 3 }}
+      margin="auto"
       spacing="65px"
       paddingTop="100px"
       marginBottom="200px"
+      justifyContent="center"
     >
       <ProjectCard
         imagename={rubrixpage}

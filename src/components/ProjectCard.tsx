@@ -35,6 +35,7 @@ const ProjectCard = ({ project, imagename, linkid }: Props) => {
             : "linear(to-l, #C4E0E5, #C4E0E5)"
         }
         boxShadow={colorMode === "dark" ? "dark-lg" : "dark-lg"}
+        maxWidth="450px"
       >
         <Text
           paddingLeft="27px"
@@ -65,13 +66,7 @@ const ProjectCard = ({ project, imagename, linkid }: Props) => {
                 textAlign="left"
                 fontFamily="JetBrains Mono"
                 marginTop="14px"
-              >
-                <HStack>
-                  <AiFillHtml5 />
-                  <DiCss3 />
-                  <IoLogoJavascript />
-                </HStack>
-              </Text>
+              ></Text>
             </CardBody>
           </Card>
           <Text

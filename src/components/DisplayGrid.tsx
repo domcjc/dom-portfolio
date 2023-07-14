@@ -20,7 +20,7 @@ const DisplayGrid = () => {
         linkid={"project1"}
       ></DisplayCard>
 
-      <DisplayCard
+      {/*       <DisplayCard
         imagename={bookpage}
         project={"Book Discussion Program"}
         linkid={"project2"}
@@ -36,7 +36,7 @@ const DisplayGrid = () => {
         imagename={otherproject}
         project={"Barcode Scanner"}
         linkid={"project4"}
-      ></DisplayCard>
+      ></DisplayCard> */}
     </SimpleGrid>
   );
 };

@@ -8,8 +8,10 @@ import {
   Center,
   Text,
   HStack,
+  Container,
 } from "@chakra-ui/react";
 import { useColorMode } from "@chakra-ui/react";
+import PictureCarousel from "./pictureCarousel";
 
 interface Props {
   project: string;
@@ -33,10 +35,29 @@ const DisplayCard = ({ project, imagename, linkid }: Props) => {
       <Card
         borderRadius={12}
         bg={colorMode === "dark" ? "#203A43" : "#C4E0E5"}
-        height="700px"
         id={linkid}
         marginBottom="200px"
-      ></Card>
+        paddingRight="40px"
+      >
+        <CardBody>
+          <PictureCarousel />
+          <Text
+            paddingBottom="20px"
+            fontSize="12pt"
+            paddingLeft="40px"
+            fontFamily="JetBrains Mono"
+          >
+            Rubrix is an encompassing web-based application that provides
+            methods to create, modify and store rubrics, whilst also allowing
+            the user to mark student work in-app.
+            <br />
+            <br />
+            Along with a secure sign-on system, the application also allows for
+            custom file downloads, uploads and exports, for easy distribution
+            and collaborative work.
+          </Text>
+        </CardBody>
+      </Card>
     </div>
   );
 };

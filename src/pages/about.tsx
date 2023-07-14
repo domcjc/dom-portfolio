@@ -38,17 +38,17 @@ const about = () => {
           paddingRight="20px"
           paddingBottom="20px"
         >
-          My name is Dom Coleman.
+          Hi, Im Dom.
         </Text>
         <Text fontFamily="JetBrains Mono" paddingLeft="5px" paddingRight="20px">
           Originally from Taranaki, I came to Auckland to study Computer Science
           at the University of Auckland. I Graduated in 2023 and left my studies
           with a interest in web development.
           <br />
-          <br />I am both keen on both front and back end, alongside
-          implementating UI/UX that proves relevant to the context and setting
-          of a specfic application. I also have a keen interest in intergrating
-          cloud services, particularly AWS.
+          <br />I am keen on front end development, alongside implementating
+          UI/UX that proves relevant to the context and setting of a specfic
+          application. I also have a keen interest in intergrating cloud
+          services, particularly AWS.
           <br />
           <br />
           <br />

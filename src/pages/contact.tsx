@@ -12,6 +12,7 @@ import {
   HStack,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
+import PictureCarousel from "../components/pictureCarousel";
 
 const contact = () => {
   const { toggleColorMode, colorMode } = useColorMode();
